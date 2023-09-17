@@ -1,0 +1,22 @@
+[package]
+name = "rustcnn"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#tch = "0.13.0"
+serde = "1.0.188"
+burn = { version = "0.9.0", features = ["train", "wgpu", "autodiff"]}
+#burn = { version = "0.9.0", features = ["train", "autodiff", "tch"]}
+burn-wgpu = "0.9.0"
+wgpu = "0.17.0"
+image = "0.24.7"
+plotly = { version = "0.8.4", features = ["plotly_ndarray"]}
+#plotters = "0.3.5"
+#gnu-plot = "0.1.0"
+#burn-tch = "0.9.0"
+#tch = { version = "0.13.0", features = ["download-libtorch"]}
+polars = { version = "0.32.1", features = ["ndarray", "dtype-array"]}
+csv = "1.2.2"
