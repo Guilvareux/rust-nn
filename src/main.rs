@@ -36,7 +36,7 @@ fn main() {
     //let device = TchDevice::Cuda(0);
     let device = WgpuDevice::DiscreteGpu(0);
     //let device = WgpuDevice::default();
-    let train = CsvReader::from_path("../../datasets/cnn/train.csv").unwrap().has_header(true).finish().unwrap();
+    let train = CsvReader::from_path("../bender/datasets/cnn/train.csv").unwrap().has_header(true).finish().unwrap();
     //let labels = train.column("label").unwrap().i64().unwrap();
     let labels = train.column("label").unwrap().i64().unwrap().cast(&DataType::Int32).unwrap();
     let train = train.drop("label").unwrap();
