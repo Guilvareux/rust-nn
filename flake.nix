@@ -105,7 +105,7 @@
 				cudaPackages.cudnn
 				linuxPackages.nvidia_x11
 				openblas
-				llama-pkg
+				#llama-pkg
 				#pylyzer
 				ruff
 				ruff-lsp
